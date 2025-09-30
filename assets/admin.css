@@ -1,0 +1,34 @@
+
+/* AO Admin UI */
+.ao-wrap {max-width: 1200px;}
+.ao-header {display:flex; align-items:center; justify-content:space-between; margin: 16px 0 12px;}
+.ao-title {display:flex; align-items:center; gap:10px;}
+.ao-title h1 {margin:0; font-size:24px;}
+.ao-actions .button {margin-left:8px;}
+.ao-tabs {display:flex; gap:6px; border-bottom:1px solid #ddd; margin: 12px 0 16px;}
+.ao-tab {padding:8px 12px; border-radius:8px 8px 0 0; background:#f6f7f7; cursor:pointer; border:1px solid #ddd; border-bottom:none;}
+.ao-tab.is-active {background:#fff; font-weight:600; box-shadow:0 -1px 0 #fff inset;}
+.ao-grid {display:grid; grid-template-columns: repeat(12, 1fr); gap:14px;}
+.ao-card {grid-column: span 12; background:#fff; border:1px solid #e0e0e0; border-radius:12px; box-shadow:0 1px 0 rgba(0,0,0,0.04);}
+.ao-card .ao-card-hd {padding:12px 16px; border-bottom:1px solid #eee; display:flex; align-items:center; justify-content:space-between;}
+.ao-card .ao-card-bd {padding:12px 16px;}
+.ao-card h3 {margin:0; font-size:16px;}
+.ao-field {display:flex; align-items:flex-start; gap:12px; padding:10px 0; border-bottom:1px dashed #eee;}
+.ao-field:last-child {border-bottom:none;}
+.ao-field .ao-label {width:260px; font-weight:600;}
+.ao-field .ao-control {flex:1;}
+.ao-switch input[type="checkbox"]{position:relative;width:44px;height:24px;-webkit-appearance:none;appearance:none;background:#d0d0d0;border-radius:999px;outline:none;cursor:pointer;transition:all .2s;}
+.ao-switch input[type="checkbox"]::after{content:"";position:absolute;left:2px;top:2px;width:20px;height:20px;background:#fff;border-radius:50%;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.ao-switch input[type="checkbox"]:checked{background:#007cba;}
+.ao-switch input[type="checkbox"]:checked::after{transform:translateX(20px);}
+.ao-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:8px 0 16px;}
+.ao-tile{background:#fff;border:1px solid #e4e4e4;border-radius:10px;padding:12px 14px;}
+.ao-tile .ao-k{font-size:24px;font-weight:700;}
+.ao-stickybar{position:sticky;bottom:0;background:#fff;border-top:1px solid #e4e4e4;padding:10px 12px;display:flex;justify-content:space-between;align-items:center;margin-top:16px;z-index:10;}
+.ao-search{display:flex;gap:8px;align-items:center;margin-left:auto;}
+.ao-search input{min-width:260px;}
+.ao-card-bd table.form-table{width:100%;}
+.ao-card-bd .form-table th{display:none;}
+.ao-card-bd .form-table td{padding:0;}
+[data-ao-tab]{display:none;}
+[data-ao-tab].is-active{display:block;}
